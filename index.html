@@ -364,6 +364,84 @@ header.scrolled{box-shadow:0 6px 24px rgba(0,0,0,.35)}
   .wa-pop{right:16px;left:16px;width:auto}
   :root{--radius:28px}
 }
+
+/* ===== Centrado de íconos y ajustes finos (desktop + móvil) ===== */
+.panel p.lead{color:var(--soft)}
+.ico-box{display:flex;align-items:center;justify-content:center}
+.ico-box svg{display:block;margin:auto}
+.card{text-align:center}
+.card .ico-box{margin:0 auto 20px}
+.more{justify-content:center}
+.counter{flex-direction:column;text-align:center;gap:14px}
+.counter small{text-align:center}
+.post .body{text-align:center}
+.post .cat{justify-content:center}
+.bubble{display:flex;align-items:center;justify-content:center}
+.bubble svg{display:block}
+.checks li svg{flex:none}
+@media(max-width:1024px){
+  .agenda,.testi{padding:56px 0 30px}
+  .hero .wrap,.agenda .wrap,.testi .wrap{text-align:center}
+  .hero .actions,.agenda .actions,.cta .actions{justify-content:center}
+  .hero p.lead{margin-left:auto;margin-right:auto}
+  .intro h2,.areas h2{text-align:center}
+  .intro .split>div,.areas .split>div{text-align:center}
+  .checks{justify-content:center;width:max-content;max-width:100%;margin-left:auto;margin-right:auto;text-align:left}
+  .social{justify-content:center}
+  .slider{margin:0 auto;max-width:560px;text-align:left}
+  .cta .panel{text-align:center}
+  .foot{text-align:center}
+  .foot .brand{align-items:center;margin-left:auto;margin-right:auto}
+  .foot p{margin:0 auto}
+  .contact-list{justify-items:center}
+  .contact-list li{text-align:left}
+  .foot .social{justify-content:center}
+}
+@media(max-width:680px){
+  .wrap{width:90%}
+  .nav{height:72px}.menu{inset:72px 0 auto 0}
+  .brand img{height:46px}
+  .hero .wrap{min-height:auto;padding-top:28px;gap:10px}
+  .hero .tag{font-size:10px;letter-spacing:.14em}
+  .hero h1{font-size:clamp(34px,10vw,42px)}
+  .hero p.lead{font-size:15px;margin-bottom:26px}
+  .hero .actions,.agenda .actions,.cta .actions{flex-direction:column;align-items:stretch;gap:14px;width:100%;max-width:340px;margin-left:auto;margin-right:auto}
+  .btn{width:100%;padding:15px 20px}
+  .btn.small{width:auto}
+  .hero-art,.agenda-art,.testi-art{height:auto;padding:30px 0 10px}
+  .photo{margin-bottom:10px}
+  .bubble{width:40px;height:40px}
+  .bubble svg{width:19px;height:19px}
+  .intro{padding:70px 0 20px}
+  .intro .split,.areas .split{gap:24px}
+  .pillars{margin-top:50px;gap:44px}
+  .marquee-sec{padding:40px 0 50px}
+  .track span{padding:16px 24px;font-size:15px}
+  .agenda h2,.testi h2{font-size:32px}
+  .intro h2,.areas h2,.how h2,.blog h2,.marquee-sec h2{font-size:30px;line-height:1.2}
+  .counters .wrap{grid-template-columns:1fr 1fr;gap:34px 12px}
+  .counter b{font-size:34px}
+  .counter small{font-size:13px}
+  .areas{padding:60px 0 70px}
+  .cards{gap:22px}
+  .card{padding:30px 22px}
+  .slides{min-height:330px}
+  .who small{font-size:12px}
+  .arrows{position:static;justify-content:center;margin-top:16px}
+  .dots{justify-content:center}
+  .how{padding:70px 0 60px}
+  .how .sub,.blog .sub{margin-bottom:40px}
+  .steps{gap:50px}
+  .cta{padding:40px 0}
+  .cta .panel{padding:50px 22px}
+  .cta h2{font-size:32px}
+  .blog{padding:50px 0 70px}
+  .posts{gap:26px}
+  footer .panel{padding:50px 22px 24px}
+  .copy{line-height:1.7;margin-top:40px;font-size:13px}
+  .wa-fab{right:16px;bottom:16px;width:54px;height:54px}
+  .wa-pop{bottom:84px}
+}
 </style>
 </head>
 <body>
@@ -398,7 +476,7 @@ header.scrolled{box-shadow:0 6px 24px rgba(0,0,0,.35)}
       <a href="#articulos">Artículos</a>
       <span class="lang"><i></i> ES</span>
     </nav>
-    <a href="#contacto" class="cta-top">Contáctanos</a>
+    <a href="#contacto" class="cta-top">Contactanos</a>
     <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
@@ -492,7 +570,7 @@ header.scrolled{box-shadow:0 6px 24px rgba(0,0,0,.35)}
       </div>
     </div>
     <div class="rv r d1">
-      <h2>Agenda una <span class="hl">Asesoría</span> Personalizada en Línea</h2>
+      <h2>Agendá una <span class="hl">Asesoría</span> Personalizada en Línea</h2>
       <p>Contanos qué necesitás y te orientamos sobre el servicio adecuado, los requisitos y los próximos pasos. Cada caso se evalúa de forma individual.</p>
       <ul class="checks">
         <li><svg><use href="#i-scale"/></svg>Experiencia jurídica y notarial</li>
@@ -500,8 +578,8 @@ header.scrolled{box-shadow:0 6px 24px rgba(0,0,0,.35)}
         <li><svg><use href="#i-hand"/></svg>Relación de confianza</li>
       </ul>
       <div class="actions">
-        <a class="btn light" data-wa href="#contacto"><svg class="icon"><use href="#i-wa"/></svg> Escríbenos al WhatsApp</a>
-        <a class="btn" data-wa href="#contacto"><svg class="icon"><use href="#i-cal"/></svg> Agenda tu Asesoría</a>
+        <a class="btn light" data-wa href="#contacto"><svg class="icon"><use href="#i-wa"/></svg> Escribinos al WhatsApp</a>
+        <a class="btn" data-wa href="#contacto"><svg class="icon"><use href="#i-cal"/></svg> Agendá tu asesoría</a>
       </div>
       <div class="social">
         <a data-fb href="#contacto" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
@@ -639,10 +717,10 @@ header.scrolled{box-shadow:0 6px 24px rgba(0,0,0,.35)}
     <div class="panel round rv z">
       <div class="orbit spin"><div class="ring"></div><div class="ring r2"></div><div class="ring r3"></div></div>
       <h2>Tu Tranquilidad es <span class="hl">Nuestra Meta</span></h2>
-      <p>Estamos aquí para ayudarte. ¡Contáctanos y recibí orientación jurídica y notarial personalizada!</p>
+      <p>Estamos aquí para ayudarte. ¡Contactanos y recibí orientación jurídica y notarial personalizada!</p>
       <div class="actions">
-        <a class="btn" data-wa href="#contacto"><svg class="icon"><use href="#i-cal"/></svg> Agenda tu Asesoría</a>
-        <a class="btn light" data-wa href="#contacto"><svg class="icon"><use href="#i-wa"/></svg> Escríbenos al WhatsApp</a>
+        <a class="btn" data-wa href="#contacto"><svg class="icon"><use href="#i-cal"/></svg> Agendá tu asesoría</a>
+        <a class="btn light" data-wa href="#contacto"><svg class="icon"><use href="#i-wa"/></svg> Escribinos al WhatsApp</a>
       </div>
     </div>
   </div>
@@ -698,7 +776,7 @@ header.scrolled{box-shadow:0 6px 24px rgba(0,0,0,.35)}
             <span class="mono">CR</span>
             <small>Carrillo Rojas</small>
           </a>
-          <p>En Carrillo Rojas — Estudio Jurídico-Notarial entendemos la importancia de resolver consultas legales y formalizar trámites con seguridad. Contáctanos hoy y deja que la Abg. Elsa Carrillo te brinde la orientación que necesitás.</p>
+          <p>En Carrillo Rojas — Estudio Jurídico-Notarial entendemos la importancia de resolver consultas legales y formalizar trámites con seguridad. Contactanos hoy y dejá que la Abg. Elsa Carrillo te brinde la orientación que necesitás.</p>
         </div>
         <div>
           <h4>Cómo encontrarnos</h4>
@@ -723,9 +801,9 @@ header.scrolled{box-shadow:0 6px 24px rgba(0,0,0,.35)}
   <button class="x" id="waClose" aria-label="Cerrar">×</button>
   <div class="row">
     <span class="av"><img src="assets/elsa-avatar.jpg" alt="" onerror="this.remove()">CR<i></i></span>
-    <p><b>Elsa Carrillo</b> está en línea<br>¿Tienes alguna consulta? ¡Escríbenos!</p>
+    <p><b>Elsa Carrillo</b> está en línea<br>¿Tenés alguna consulta? ¡Escribinos!</p>
   </div>
-  <a class="btn" data-wa href="#contacto">Hablar Ahora</a>
+  <a class="btn" data-wa href="#contacto">Hablar ahora</a>
   <div class="on"><i></i> En línea</div>
 </div>
 <button class="wa-fab" id="waFab" aria-label="Abrir chat de WhatsApp"><svg><use href="#i-wa"/></svg></button>
@@ -806,7 +884,7 @@ const CONFIG = {
   /* Widget de WhatsApp */
   const pop=document.getElementById('waPop'), fab=document.getElementById('waFab');
   let closed=false;
-  setTimeout(()=>{if(!closed)pop.classList.add('show')},3500);
+  if(innerWidth>680) setTimeout(()=>{if(!closed)pop.classList.add('show')},3500);
   document.getElementById('waClose').onclick=()=>{closed=true;pop.classList.remove('show')};
   fab.onclick=()=>{ if(pop.classList.contains('show')){ if(waUrl) open(waUrl,'_blank'); else location.hash='contacto'; } else pop.classList.add('show'); };
 })();
