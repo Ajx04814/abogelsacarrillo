@@ -26,3 +26,11 @@ Sitio institucional demostrativo para Elsa Carrillo, Asunción, Paraguay.
 Abrir `index.html` localmente o habilitar GitHub Pages en Settings → Pages → Deploy from branch → main → /(root).
 
 Las imágenes deben estar en `assets/` con los nombres indicados no HTML.
+
+## Estructura (clon de romeronagy.com)
+Menú fijo · Hero con órbita animada · Seguridad jurídica + 3 pilares · Carrusel "Áreas de Atención" · Agenda tu Asesoría · Contadores animados · 6 servicios · Slider de testimonios · Cómo te ayudamos · CTA · Blog · Footer · Widget flotante de WhatsApp "En línea".
+Tipografías: Inter (títulos) y Roboto (textos), igual que el original.
+
+## Configurar datos
+Editar el bloque `CONFIG` al final de `index.html` (WhatsApp, correo, dirección, redes). Los botones se actualizan solos.
+Mientras falten las fotos en `assets/`, el sitio muestra el monograma CR en su lugar.
