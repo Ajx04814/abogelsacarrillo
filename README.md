@@ -34,3 +34,10 @@ Tipografías: Inter (títulos) y Roboto (textos), igual que el original.
 ## Configurar datos
 Editar el bloque `CONFIG` al final de `index.html` (WhatsApp, correo, dirección, redes). Los botones se actualizan solos.
 Mientras falten las fotos en `assets/`, el sitio muestra el monograma CR en su lugar.
+
+## Sitio publicado
+GitHub Pages: https://ajx04814.github.io/abogelsacarrillo/
+
+## Llevar el sitio a otro hosting
+- `site-completo.html` — archivo ÚNICO con todas las fotos incluidas. Basta subirlo (renombrado a `index.html` si hace falta) a cualquier hosting, WordPress o constructor que acepte HTML.
+- O copiar `index.html` + la carpeta `assets/` juntos.
