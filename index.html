@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Carrillo Rojas | Estudio Jurídico-Notarial en Asunción, Paraguay</title>
 <meta name="description" content="Elsa Carrillo — Abogada, Notaria y Agente de Registro de Marcas. Asesoramiento jurídico, servicios notariales, legalización de documentos, trámites migratorios y registro de marcas en Asunción, Paraguay.">
-<meta name="theme-color" content="#061F36">
+<meta name="theme-color" content="#04192D">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Carrillo Rojas | Estudio Jurídico-Notarial">
 <meta property="og:description" content="Respaldo jurídico para proteger tus derechos y dar seguridad a tus proyectos en Paraguay.">
 <meta property="og:image" content="https://ajx04814.github.io/abogelsacarrillo/assets/og-image.jpg">
 <meta property="og:locale" content="es_PY">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%23061F36%22/%3E%3Ctext x=%2232%22 y=%2242%22 font-family=%22Arial%22 font-weight=%22800%22 font-size=%2228%22 fill=%22%23C99B4D%22 text-anchor=%22middle%22%3ECR%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="assets/favicon.png"><link rel="alternate icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%23061F36%22/%3E%3Ctext x=%2232%22 y=%2242%22 font-family=%22Arial%22 font-weight=%22800%22 font-size=%2228%22 fill=%22%23C99B4D%22 text-anchor=%22middle%22%3ECR%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -272,10 +272,67 @@ footer .panel{border-radius:var(--radius) 0 var(--radius) 0;padding:70px 6% 30px
 .d1{transition-delay:.12s}.d2{transition-delay:.24s}.d3{transition-delay:.36s}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 
+
+/* ===== Tema azul-marino + dorado (identidad Carrillo Rojas) ===== */
+:root{--deep:#04192D;--deep2:#0A2A47;--soft:#C9D3DC}
+header{background:rgba(4,25,45,.97)}
+header.scrolled{box-shadow:0 6px 24px rgba(0,0,0,.35)}
+.brand img{height:58px}
+.menu{color:#fff}
+.lang{color:#fff}
+.cta-top{background:var(--gold);color:var(--night)}
+.cta-top:hover{background:var(--gold2)}
+.burger{color:#fff}
+.panel{background:radial-gradient(ellipse at 75% 20%,#0E3557 0%,var(--deep2) 35%,var(--deep) 75%);color:var(--soft)}
+.panel::before{content:"";position:absolute;width:140%;height:120%;left:-20%;top:-70%;border-radius:50%;border-bottom:2px solid rgba(214,173,99,.55);pointer-events:none}
+.panel::after{content:"";position:absolute;width:140%;height:120%;left:-10%;bottom:-85%;border-radius:50%;border-top:1.5px solid rgba(214,173,99,.35);pointer-events:none}
+.panel>*:not(.orbit){position:relative;z-index:1}
+.panel::before,.panel::after{z-index:0}
+.panel h1,.panel h2,.panel h3,.panel h4,.panel .who b,.panel .contact-list b{color:#fff}
+.panel .hl{color:var(--gold2)}
+.panel p,.panel .lead,.panel li,.panel small,.panel .contact-list,.panel .copy{color:var(--soft)}
+.panel .tag{color:var(--gold2)}
+.panel .copy b{color:var(--gold2)}
+.panel .btn{box-shadow:3px 3px 0 0 #000}
+.panel .btn:hover{box-shadow:5px 5px 0 0 #000}
+.panel .btn.light{background:transparent;color:#fff;border:1.5px solid var(--gold);box-shadow:none}
+.panel .btn.light:hover{background:rgba(214,173,99,.12);box-shadow:none}
+.panel .sep{background:rgba(214,173,99,.35)!important}
+.panel .orbit .ring{border-color:rgba(214,173,99,.4)}
+.panel .orbit .ring.r2{border-color:rgba(255,255,255,.12)}
+.panel .orbit .dot{background:rgba(214,173,99,.5)}
+.panel .bubble.n{background:var(--deep);border:1.5px solid var(--gold);color:var(--gold2)}
+.panel .checks svg{fill:var(--gold2)}
+.panel .social a{color:var(--gold2)}
+.panel .social a:hover{background:var(--gold);color:var(--night)}
+.panel .quote{background:rgba(255,255,255,.06);border:1px solid rgba(214,173,99,.3);box-shadow:none}
+.panel .quote p{color:#E4E9EE}
+.panel .who .av{background:var(--gold);color:var(--night)}
+.panel .dots button{background:rgba(255,255,255,.25)}
+.panel .dots button.on{background:var(--gold)}
+.panel .arrows button{background:transparent;border-color:rgba(214,173,99,.5);color:var(--gold2)}
+.panel .arrows button:hover{background:var(--gold);color:var(--night)}
+.panel .contact-list svg{fill:var(--gold2)}
+.panel .contact-list a:hover{color:var(--gold2)}
+.photo img{border-color:var(--deep2)}
+.foot .social a{background:transparent;border:1.5px solid var(--gold);color:var(--gold2)}
+.ico-box{background:var(--deep);box-shadow:0 10px 30px rgba(4,25,45,.25);border:1.5px solid rgba(214,173,99,.6)}
+.ico-box svg{stroke:#fff}
+.ico-box svg .acc{stroke:var(--gold2)}
+.counters{background:var(--deep);padding:60px 0}
+.counter b{color:#fff}.counter small{color:var(--soft)}
+.card:hover,.card.active{background:linear-gradient(160deg,var(--deep2),var(--deep));}
+.card:hover h3,.card.active h3{color:#fff}
+.card:hover p,.card.active p{color:var(--soft)}
+.card:hover .more,.card.active .more{color:var(--gold2)}
+.track span svg{stroke:var(--goldText)}
+.post .thumb{background:linear-gradient(135deg,var(--deep2),var(--deep))}
+.wa-pop .av{background:var(--deep)}
+
 /* ===== Responsive ===== */
 @media(max-width:1024px){
   .photo img,.agenda-art .photo img,.testi-art .photo img{width:340px;height:485px}
-  .menu{position:fixed;inset:88px 0 auto 0;background:#fff;flex-direction:column;align-items:flex-start;padding:24px 6%;gap:18px;box-shadow:0 20px 30px rgba(6,31,54,.1);transform:translateY(-130%);transition:transform .4s;z-index:-1}
+  .menu{position:fixed;inset:88px 0 auto 0;background:#04192D;flex-direction:column;align-items:flex-start;padding:24px 6%;gap:18px;box-shadow:0 20px 30px rgba(6,31,54,.1);transform:translateY(-130%);transition:transform .4s;z-index:-1}
   .menu.open{transform:none}
   .burger{display:block}
   .cta-top{display:none}
