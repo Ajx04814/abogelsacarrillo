@@ -9,9 +9,9 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Carrillo Rojas | Estudio Jurídico-Notarial">
 <meta property="og:description" content="Respaldo jurídico para proteger tus derechos y dar seguridad a tus proyectos en Paraguay.">
-<meta property="og:image" content="assets/elsa-brazos-cruzados.png">
+<meta property="og:image" content="https://ajx04814.github.io/abogelsacarrillo/assets/og-image.jpg">
 <meta property="og:locale" content="es_PY">
-<link rel="icon" href="assets/logo-carrillo-rojas.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%23061F36%22/%3E%3Ctext x=%2232%22 y=%2242%22 font-family=%22Arial%22 font-weight=%22800%22 font-size=%2228%22 fill=%22%23C99B4D%22 text-anchor=%22middle%22%3ECR%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -94,8 +94,10 @@ header.scrolled{box-shadow:0 6px 24px rgba(6,31,54,.08)}
 .hero-art{position:relative;height:640px;display:flex;align-items:flex-end;justify-content:center}
 .hero-art .orbit{width:560px;height:560px;top:40px;left:50%;margin-left:-280px}
 .photo{position:relative;z-index:1}
-.photo img{object-fit:contain;object-position:bottom}
-.hero-art .photo img{max-height:620px}
+.photo img{width:400px;height:571px;object-fit:cover;object-position:top;border-radius:200px 200px 28px 28px;border:8px solid #fff;box-shadow:0 0 0 1px var(--gold),0 28px 60px rgba(6,31,54,.22)}
+.photo{margin-bottom:34px}
+.photo::after{content:"";position:absolute;inset:-18px -18px 14px 18px;border:1.5px solid var(--gold);border-radius:210px 210px 30px 30px;z-index:-1}
+
 .ph{display:none;width:340px;height:520px;border-radius:200px 200px 20px 20px;background:linear-gradient(160deg,var(--navy),var(--night));color:var(--gold2);align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:30px;box-shadow:0 20px 50px rgba(6,31,54,.25)}
 .ph b{font:800 64px Inter;letter-spacing:-.04em}
 .ph span{font:600 13px Inter;letter-spacing:.2em;margin-top:8px;color:#fff}
@@ -131,7 +133,7 @@ header.scrolled{box-shadow:0 6px 24px rgba(6,31,54,.08)}
 .agenda .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center;min-height:620px}
 .agenda-art{position:relative;height:620px;display:flex;align-items:flex-end;justify-content:center}
 .agenda-art .orbit{width:520px;height:520px;top:30px;left:50%;margin-left:-300px}
-.agenda-art .photo img{max-height:580px}
+.agenda-art .photo img,.testi-art .photo img{width:370px;height:528px}
 .agenda h2{font-size:clamp(36px,4vw,54px);line-height:1.12;margin-bottom:20px}
 .checks{list-style:none;margin:26px 0 34px;display:grid;gap:14px}
 .checks li{display:flex;align-items:center;gap:12px;font-size:15px}
@@ -187,7 +189,7 @@ header.scrolled{box-shadow:0 6px 24px rgba(6,31,54,.08)}
 .arrows button:hover{background:var(--navy);color:#fff}
 .testi-art{position:relative;height:620px;display:flex;align-items:flex-end;justify-content:center}
 .testi-art .orbit{width:480px;height:480px;top:-60px;right:-40px}
-.testi-art .photo img{max-height:560px}
+
 .note{font-size:12px;color:#9a8a6a;margin-top:16px}
 
 /* ===== How ===== */
@@ -272,6 +274,7 @@ footer .panel{border-radius:var(--radius) 0 var(--radius) 0;padding:70px 6% 30px
 
 /* ===== Responsive ===== */
 @media(max-width:1024px){
+  .photo img,.agenda-art .photo img,.testi-art .photo img{width:340px;height:485px}
   .menu{position:fixed;inset:88px 0 auto 0;background:#fff;flex-direction:column;align-items:flex-start;padding:24px 6%;gap:18px;box-shadow:0 20px 30px rgba(6,31,54,.1);transform:translateY(-130%);transition:transform .4s;z-index:-1}
   .menu.open{transform:none}
   .burger{display:block}
@@ -286,6 +289,8 @@ footer .panel{border-radius:var(--radius) 0 var(--radius) 0;padding:70px 6% 30px
   .counters .wrap{grid-template-columns:1fr 1fr;row-gap:40px}
 }
 @media(max-width:680px){
+  .photo img,.agenda-art .photo img,.testi-art .photo img{width:280px;height:400px}
+  .photo::after{inset:-12px -12px 10px 12px}
   .nav{height:76px}.menu{inset:76px 0 auto 0}
   .brand img{height:44px}
   .hero h1{font-size:40px}
@@ -363,8 +368,8 @@ footer .panel{border-radius:var(--radius) 0 var(--radius) 0;padding:70px 6% 30px
       <span class="bubble n" style="top:300px;left:2%;animation-delay:2s"><svg><use href="#i-check"/></svg></span>
       <span class="bubble g" style="top:230px;right:2%;animation-delay:1.5s"><svg><use href="#i-mail"/></svg></span>
       <div class="photo" data-photo>
-        <img src="assets/elsa-brazos-cruzados.png" alt="Abg. Elsa Carrillo, abogada y notaria en Asunción">
-        <div class="ph"><b>CR</b><span>ELSA CARRILLO</span><small>assets/elsa-brazos-cruzados.png</small></div>
+        <img src="assets/elsa-hero.jpg" alt="Abg. Elsa Carrillo, abogada y notaria en Asunción">
+        <div class="ph"><b>CR</b><span>ELSA CARRILLO</span></div>
       </div>
     </div>
   </div>
@@ -425,8 +430,8 @@ footer .panel{border-radius:var(--radius) 0 var(--radius) 0;padding:70px 6% 30px
       <span class="bubble g" style="top:150px;left:6%;animation-delay:1s"><svg><use href="#i-cal"/></svg></span>
       <span class="bubble g" style="top:150px;right:6%;animation-delay:2s"><svg><use href="#i-mail"/></svg></span>
       <div class="photo" data-photo>
-        <img src="assets/elsa-documento.png" alt="Abg. Elsa Carrillo revisando documentos" loading="lazy">
-        <div class="ph"><b>CR</b><span>ELSA CARRILLO</span><small>assets/elsa-documento.png</small></div>
+        <img src="assets/elsa-agenda.jpg" alt="Abg. Elsa Carrillo revisando documentos" loading="lazy">
+        <div class="ph"><b>CR</b><span>ELSA CARRILLO</span></div>
       </div>
     </div>
     <div class="rv r d1">
@@ -533,8 +538,8 @@ footer .panel{border-radius:var(--radius) 0 var(--radius) 0;padding:70px 6% 30px
       <span class="bubble g" style="top:40px;left:18%"><svg><use href="#i-hand"/></svg></span>
       <span class="bubble n" style="top:60px;right:10%;animation-delay:1.5s"><svg><use href="#i-check"/></svg></span>
       <div class="photo" data-photo>
-        <img src="assets/elsa-sentada.png" alt="Abg. Elsa Carrillo" loading="lazy">
-        <div class="ph"><b>CR</b><span>ELSA CARRILLO</span><small>assets/elsa-sentada.png</small></div>
+        <img src="assets/elsa-testimonios.jpg" alt="Abg. Elsa Carrillo" loading="lazy">
+        <div class="ph"><b>CR</b><span>ELSA CARRILLO</span></div>
       </div>
     </div>
   </div>
@@ -593,7 +598,7 @@ footer .panel{border-radius:var(--radius) 0 var(--radius) 0;padding:70px 6% 30px
     <p class="sub rv d1">Información práctica sobre registro de marcas, documentos y orientación jurídica para que tomes decisiones informadas. Los artículos son de carácter general y no reemplazan una consulta profesional.</p>
     <div class="posts">
       <article class="post rv">
-        <div class="thumb"><img src="assets/elsa-firmando.png" alt="" loading="lazy"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><path d="M19 32V16h6.5a5 5 0 0 1 0 10H19m6.5 0 6 6"/></svg></div>
+        <div class="thumb"><img src="assets/blog-marcas.jpg" alt="Registro de marcas" loading="lazy"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><path d="M19 32V16h6.5a5 5 0 0 1 0 10H19m6.5 0 6 6"/></svg></div>
         <div class="body">
           <div class="cat"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg> Registro de marcas</div>
           <h3>¿Por qué registrar la marca de tu emprendimiento?</h3>
@@ -602,7 +607,7 @@ footer .panel{border-radius:var(--radius) 0 var(--radius) 0;padding:70px 6% 30px
         </div>
       </article>
       <article class="post rv d1">
-        <div class="thumb"><img src="assets/elsa-en-pie.png" alt="" loading="lazy"><svg viewBox="0 0 48 48"><path d="M12 6h18l8 8v28H12z"/><path d="M18 34c3-4 5 2 8-2s4 1 6-1M18 20h14"/></svg></div>
+        <div class="thumb"><img src="assets/blog-notarial.jpg" alt="Servicios notariales" loading="lazy"><svg viewBox="0 0 48 48"><path d="M12 6h18l8 8v28H12z"/><path d="M18 34c3-4 5 2 8-2s4 1 6-1M18 20h14"/></svg></div>
         <div class="body">
           <div class="cat"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg> Servicios notariales</div>
           <h3>Documentos: qué tener en cuenta para su formalización</h3>
@@ -611,7 +616,7 @@ footer .panel{border-radius:var(--radius) 0 var(--radius) 0;padding:70px 6% 30px
         </div>
       </article>
       <article class="post rv d2">
-        <div class="thumb"><img src="assets/elsa-bege.png" alt="" loading="lazy"><svg viewBox="0 0 48 48"><path d="M24 6v36M14 42h20M10 14h28"/><path d="m10 14-6 13a6 6 0 0 0 12 0Zm28 0-6 13a6 6 0 0 0 12 0Z"/></svg></div>
+        <div class="thumb"><img src="assets/blog-juridico.jpg" alt="Asesoramiento jurídico" loading="lazy"><svg viewBox="0 0 48 48"><path d="M24 6v36M14 42h20M10 14h28"/><path d="m10 14-6 13a6 6 0 0 0 12 0Zm28 0-6 13a6 6 0 0 0 12 0Z"/></svg></div>
         <div class="body">
           <div class="cat"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg> Asesoramiento jurídico</div>
           <h3>La importancia de la orientación jurídica para tu empresa</h3>
@@ -660,7 +665,7 @@ footer .panel{border-radius:var(--radius) 0 var(--radius) 0;padding:70px 6% 30px
 <div class="wa-pop" id="waPop" role="dialog" aria-label="Chat de WhatsApp">
   <button class="x" id="waClose" aria-label="Cerrar">×</button>
   <div class="row">
-    <span class="av"><img src="assets/elsa-brazos-cruzados.png" alt="" onerror="this.remove()">CR<i></i></span>
+    <span class="av"><img src="assets/elsa-avatar.jpg" alt="" onerror="this.remove()">CR<i></i></span>
     <p><b>Elsa Carrillo</b> está en línea<br>¿Tienes alguna consulta? ¡Escríbenos!</p>
   </div>
   <a class="btn" data-wa href="#contacto">Hablar Ahora</a>

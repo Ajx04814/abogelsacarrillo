@@ -1,15 +1,16 @@
-# Fotografías y logomarca — Carrillo Rojas
+# Fotografías — Carrillo Rojas
 
-Las 20 fotografías y la logomarca están guardadas en la carpeta de Google Drive:
-https://drive.google.com/drive/folders/1lMlev9h3nOPIoFA__DGsY_JSbVSfVIoi
+Seleccionadas del paquete `elsa-imagens-github.zip` (35 imágenes), recortadas y optimizadas para web:
 
-Para el despliegue, descargue las imágenes autorizadas y colóquelas en esta carpeta con estos nombres:
-- logo-carrillo-rojas.png
-- elsa-brazos-cruzados.png
-- elsa-documento.png
-- elsa-en-pie.png
-- elsa-firmando.png
-- elsa-bege.png
-- elsa-sentada.png
+| Archivo | Sección | Original |
+|---|---|---|
+| elsa-hero.jpg | Hero | 34_retrato_elegante_no_escritório_jurídico |
+| elsa-agenda.jpg | Agenda tu Asesoría | 20_advogada_assinando_documento_no_escritório |
+| elsa-testimonios.jpg | Opiniones de Clientes | 21_advogada_em_escritório_luxuoso |
+| blog-marcas.jpg | Blog — Registro de marcas | 10 |
+| blog-notarial.jpg | Blog — Servicios notariales | 14 |
+| blog-juridico.jpg | Blog — Asesoramiento jurídico | 15 |
+| elsa-avatar.jpg | Widget de WhatsApp | 02 |
+| og-image.jpg | Vista previa al compartir el enlace | 34 |
 
-O HTML atual usa placeholders para as fotografias até que os arquivos binários sejam adicionados ao repositório. Não usar imagens de terceiros para representar Elsa.
+Logomarca: si se agrega `logo-carrillo-rojas.png` en esta carpeta, reemplaza automáticamente el monograma "CR" del menú y del pie.
